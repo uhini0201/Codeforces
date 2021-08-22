@@ -1,6 +1,6 @@
-'''
-  
-<p>Polycarp has found a table having an infinite number of rows and columns. The rows are numbered from 1, starting from the topmost one. The columns are numbered from 1, starting from the leftmost one.
+# Infinity Table
+
+<span>Polycarp has found a table having an infinite number of rows and columns. The rows are numbered from 1, starting from the topmost one. The columns are numbered from 1, starting from the leftmost one.
 Initially, the table hasn't been filled and Polycarp wants to fix it. He writes integers from 1 and so on to the table as follows.
   
 <br><br>
@@ -22,7 +22,7 @@ Each test case consists of one line containing one integer k (1≤k≤109) which
 
 ## Output
 For each test case, output in a separate line two integers r and c (r,c≥1) separated by spaces — the indices of the row and the column containing the cell filled by the number k, respectively.
- </p>
+ </span>
 
 <span>
 # Example
@@ -45,7 +45,7 @@ For each test case, output in a separate line two integers r and c (r,c≥1) sep
 31623 14130
 </span>
   
-'''  
+
   
 # CODE
 
