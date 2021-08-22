@@ -7,7 +7,7 @@ Initially, the table hasn't been filled and Polycarp wants to fix it. He writes 
  <p align="center">
   <img src="https://espresso.codeforces.com/aa1eece2e042a16fcbc09f2af100e73049fd8841.png" width="200px">
  </p>
-
+<br><br>
 The figure shows the placement of the numbers from 1 to 10. The following actions are denoted by the arrows.
 The leftmost topmost cell of the table is filled with the number 1. Then he writes in the table all positive integers beginning from 2 sequentially using the following algorithm.
 
@@ -26,26 +26,25 @@ Each test case consists of one line containing one integer k (1≤k≤109) which
 For each test case, output in a separate line two integers r and c (r,c≥1) separated by spaces — the indices of the row and the column containing the cell filled by the number k, respectively.
  </span>
 
-<span>
 # Example
 ## input
-7
-11
-14
-5
-4
-1
-2
-1000000000
+
+7<br>
+11<br>
+14<br>
+5<br>
+4<br>
+1<br>
+2<br>
+1000000000<br>
 ## output
-2 4
-4 3
-1 3
-2 1
-1 1
-1 2
-31623 14130
-</span>
+2 4<br>
+4 3<br>
+1 3<br>
+2 1<br>
+1 1<br>
+1 2<br>
+31623 14130<br>
   
 
   
