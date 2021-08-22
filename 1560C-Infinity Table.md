@@ -4,7 +4,9 @@
 Initially, the table hasn't been filled and Polycarp wants to fix it. He writes integers from 1 and so on to the table as follows.
   
 <br><br>
- <img src="https://espresso.codeforces.com/aa1eece2e042a16fcbc09f2af100e73049fd8841.png" align="center" width="200px">
+ <p align="center">
+  <img src="https://espresso.codeforces.com/aa1eece2e042a16fcbc09f2af100e73049fd8841.png" width="200px">
+ </p>
 
 The figure shows the placement of the numbers from 1 to 10. The following actions are denoted by the arrows.
 The leftmost topmost cell of the table is filled with the number 1. Then he writes in the table all positive integers beginning from 2 sequentially using the following algorithm.
