@@ -1,8 +1,10 @@
 '''
   
-/* Polycarp has found a table having an infinite number of rows and columns. The rows are numbered from 1, starting from the topmost one. The columns are numbered from 1, starting from the leftmost one.
-
+<p>Polycarp has found a table having an infinite number of rows and columns. The rows are numbered from 1, starting from the topmost one. The columns are numbered from 1, starting from the leftmost one.
 Initially, the table hasn't been filled and Polycarp wants to fix it. He writes integers from 1 and so on to the table as follows.
+  
+<br><br>
+ <img src="https://espresso.codeforces.com/aa1eece2e042a16fcbc09f2af100e73049fd8841.png" align="center" width="200px">
 
 The figure shows the placement of the numbers from 1 to 10. The following actions are denoted by the arrows.
 The leftmost topmost cell of the table is filled with the number 1. Then he writes in the table all positive integers beginning from 2 sequentially using the following algorithm.
@@ -13,16 +15,18 @@ After that, he fills the cells from the right to the left until he stops at the 
 
 A friend of Polycarp has a favorite number k. He wants to know which cell will contain the number. Help him to find the indices of the row and the column, such that the intersection of the row and the column is the cell containing the number k.
 
-Input
+## Input
 The first line contains one integer t (1≤t≤100) — the number of test cases. Then t test cases follow.
 
 Each test case consists of one line containing one integer k (1≤k≤109) which location must be found.
 
-Output
+## Output
 For each test case, output in a separate line two integers r and c (r,c≥1) separated by spaces — the indices of the row and the column containing the cell filled by the number k, respectively.
+ </p>
 
-Example
-inputCopy
+<span>
+# Example
+## input
 7
 11
 14
@@ -31,7 +35,7 @@ inputCopy
 1
 2
 1000000000
-outputCopy
+## output
 2 4
 4 3
 1 3
@@ -39,12 +43,13 @@ outputCopy
 1 1
 1 2
 31623 14130
-*/
+</span>
   
 '''  
   
-CODE
+# CODE
 
+```
 #include<bits/stdc++.h>
 #include<algorithm>
 #include<climits>
@@ -120,22 +125,22 @@ int main(){
         lli n,i,j;
         input(n);
         lli k=ceil(sqrt(n));
-        lli st=k*k; //the leftmost column's value
+        lli st=k*k;
         //outputwithnewline(k);
-        lli di=st - k + 1; //the diagonal element for every row and column
+        lli di=st - k + 1;
         //outputwithnewline(di);
-        if(n>=di && n<=st){//whether it lies in the same row or not ,if greater than or equal to the diagonal value
-          //it means ut lies in the same row and column needs to be fixed
+        if(n>=di && n<=st){
             i=k;
-            j=1+(st-n);//the increase in column will be the start column's index + the diff between the left column's value and the given value
+            j=1+(st-n);
         }
-        else{//if less than the diagonal value then, it lies in the same column and row needs to be fixed
+        else{
             j=k;
-            i=k-(di-n);//the row's value will be the current row's value - the diff between the diagonal's value and the given value.
+            i=k-(di-n);
         }
         outputwithspace(i);outputwithnewline(j);
     }
 }
-  
+
+```
   
   
